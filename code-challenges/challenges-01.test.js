@@ -69,11 +69,11 @@ const greeting = (word) => {
   return word.toUpperCase() + "!";
 };
 
-const speaker = (words, greeting) => {
+const speaker = (words, cb) => {
   // Solution code here...
   let newArr = [];
   words.forEach((word) => {
-    newArr.push(greeting(word));
+    newArr.push(cb(word));
   });
 
   return newArr;
@@ -100,10 +100,10 @@ const addValues = (arr, value) => {
   arr.push(value);
 };
 
-const addNumbers = (num, arr, times, addValues) => {
+const addNumbers = (num, arr, times, cb) => {
   // Solution code here...
   for (let i = 1; i <= times; i++) {
-    addValues(arr, num);
+    cb(arr, num);
   }
   return arr;
 };
