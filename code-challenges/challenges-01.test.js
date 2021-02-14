@@ -157,12 +157,12 @@ const fizzbuzz = (arr) => {
   arr.forEach((num) => {
     if (num % 3 === 0) {
       output.push("Fizz");
-    }
-    if (num % 5 === 0) {
+    } else if (num % 5 === 0) {
       output.push("Buzz");
-    }
-    if (num % 3 === 0 && num % 5 === 0) {
+    } else if (num % 3 === 0 && num % 5 === 0) {
       output.push("Fizz Buzz");
+    } else {
+      output.push(num);
     }
   });
   return output;
