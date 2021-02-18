@@ -193,23 +193,12 @@ For example:
 
 const removeEvenValues = (arr) => {
   // Solution code here...
-  let newArr = [];
-  arr.forEach((num) => {
-    if (num % 2 !== 0) {
-      newArr.push(num);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      arr.splice(arr.indexOf(arr[i]), 1);
+      i = 0;
     }
-  });
-
-  let length = arr.length;
-
-  for (let index = 0; index < length; index++) {
-    arr.shift();
   }
-
-  newArr.forEach((num) => {
-    arr.push(num);
-  });
-
   return arr;
 };
 
