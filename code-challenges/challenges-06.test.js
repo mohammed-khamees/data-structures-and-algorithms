@@ -276,8 +276,6 @@ const deceasedSpouses = ["Catelyn", "Lysa", "Robert", "Khal Drogo", "Alerie"];
 const houseSurvivors = (arr) => {
   const survivors = [];
   // Solution code here...
-  const sizes = [];
-  // Solution code here...
   arr.forEach((el) => {
     let total = el.children.length;
     if (el.name) {
