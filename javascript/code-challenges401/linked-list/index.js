@@ -24,7 +24,7 @@ class LinkedList {
     let current = this.head;
 
     while (current) {
-      if (current.data === data) return true;
+      if (current.head === data) return true;
       current = current.next;
     }
     return false;
@@ -37,15 +37,15 @@ class LinkedList {
 
     while (current) {
       if (!list) {
-        list = current.data;
+        list = current.head;
         current = current.next;
       } else {
-        list += ` -> ${current.data}`;
+        list += ` -> ${current.head}`;
         current = current.next;
       }
     }
 
-    list += ` -> ${current.data}`;
+    list += ` -> ${current}`;
     return list;
   }
 }
