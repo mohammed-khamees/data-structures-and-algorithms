@@ -1,13 +1,6 @@
 "use strict";
 
-function binarySearch(numArr, key) {
-  for (let index = 0; index < numArr.length; index++) {
-    if (numArr[index] === key) {
-      return index;
-    }
-  }
-  return -1;
-}
+const binarySearch = require("./arrayBinarySearch");
 
 describe("Testing binary Search", () => {
   test("It should return the index of the key if the array contain it otherwise return -1", () => {
