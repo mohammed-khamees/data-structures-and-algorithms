@@ -50,4 +50,27 @@ describe("testing the linked list", () => {
     ll.insert(10);
     expect(ll.toString()).toEqual("10 -> 5 -> null");
   });
+
+  test("insert at the end of linked list", () => {
+    let ll = new LinkedList();
+    ll.insert(5);
+    ll.append(10);
+    expect(ll.head.next.head).toEqual(10);
+  });
+
+  test("insert value before specific value at the  linked list", () => {
+    let ll = new LinkedList();
+    ll.insert(5);
+    ll.append(10);
+    ll.insertBefore(5, 7);
+    expect(ll.head.head).toEqual(7);
+  });
+
+  test("insert value after specific value at the  linked list", () => {
+    let ll = new LinkedList();
+    ll.insert(5);
+    ll.append(10);
+    ll.insertAfter(5, 7);
+    expect(ll.head.next.head).toEqual(7);
+  });
 });

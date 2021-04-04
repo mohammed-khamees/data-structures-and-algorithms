@@ -30,6 +30,86 @@ class LinkedList {
     return false;
   }
 
+  //adds a new node with the given value to the end of the list
+  append(data) {
+    let node = new Node(data);
+    let current;
+
+    if (!this.head) {
+      this.head = node;
+    } else {
+      current = this.head;
+
+      while (current.next) {
+        current = current.next;
+      }
+      current.next = node;
+    }
+
+    this.length++;
+  }
+
+  //which add a new node with the given newValue immediately before the first value node
+  insertBefore(data, newData) {
+    if (!data) return;
+    let node = new Node(newData);
+    let current, previous;
+
+    if (!this.head) {
+      this.head = node;
+    } else {
+      current = this.head;
+
+      while (current.head !== data) {
+        previous = current;
+        current = current.next;
+      }
+
+      if (current === this.head) {
+        previous = current;
+        node.next = previous;
+        this.head = node;
+      } else {
+        node.next = current;
+        previous.next = node;
+      }
+    }
+
+    this.size++;
+  }
+
+  //which add a new node with the given newValue immediately after the first value node
+  insertAfter(data, newData) {
+    if (!data) return;
+    let node = new Node(newData);
+    let current, previous;
+
+    if (!this.head) {
+      this.head = node;
+    } else {
+      current = this.head;
+
+      while (current.head !== data) {
+        previous = current;
+        current = current.next;
+      }
+
+      if (current === this.head) {
+        previous = current;
+        current = current.next;
+        node.next = current;
+        previous.next = node;
+      } else {
+        previous = current;
+        current = current.next;
+        node.next = current;
+        previous.next = node;
+      }
+    }
+
+    this.length++;
+  }
+
   // string representing all the values in the Linked List,
   toString() {
     let current = this.head;
