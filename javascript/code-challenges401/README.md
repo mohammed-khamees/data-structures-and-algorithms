@@ -8,3 +8,4 @@
 | 04               | White Board                                                                                                                                 |
 | 05               | [array-shift](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/linked-list)       |
 | 06               | [array-shift](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/linked-list)       |
+| 07               | [array-shift](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/linked-list)       |

@@ -35,3 +35,23 @@ for before and after it will be a loop to search for the item then change the .n
 ![whiteboard](../assets/wh1.png)
 ![whiteboard](../assets/wh2.png)
 ![whiteboard](../assets/wh3.png)
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+## Value From The End Of LL
+
+Finding the value of a giving Index starting from the last item
+
+## Challenge
+
+Implement a function that finds a value from a LL starting the index numbering from the last item to the first
+
+## Approach & Efficiency
+
+To do so I looped over the LL then converting it to normal list then reversed the list time=>O(2n) space=>O(n)
+
+## API
+
+I looped over the LL then converting it to normal list by assigning the values to a variable then reversed the list using basic method then called the item using the index value given
+
+![whiteboard](../assets/wb7.png)

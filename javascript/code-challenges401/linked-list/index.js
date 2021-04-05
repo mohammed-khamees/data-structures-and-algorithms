@@ -110,6 +110,20 @@ class LinkedList {
     this.length++;
   }
 
+  //return the node’s value that is k from the end of the linked list
+  kthFromEnd(k) {
+    if (k > this.size - 1) return "out of the linkedList range";
+    let current = this.head;
+    let count = this.length - 1;
+
+    while (count !== k) {
+      current = current.next;
+      count--;
+    }
+
+    return current.head;
+  }
+
   // string representing all the values in the Linked List,
   toString() {
     let current = this.head;
