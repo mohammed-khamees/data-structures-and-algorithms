@@ -73,4 +73,11 @@ describe("testing the linked list", () => {
     ll.insertAfter(5, 7);
     expect(ll.head.next.head).toEqual(7);
   });
+
+  test("return the node’s value that is index from the end of the linked list", () => {
+    let ll = new LinkedList();
+    ll.insert(5);
+    ll.append(10);
+    expect(ll.kthFromEnd(0)).toEqual(10);
+  });
 });
