@@ -14,4 +14,4 @@ To do so I looped till both the LL's reachs None while appending items time=>O(2
 
 To do so I looped till both the LL's reachs None while appending items
 
-![whiteboard](./../assets/w8.png)
+![whiteboard](../assets/wh8.png)
