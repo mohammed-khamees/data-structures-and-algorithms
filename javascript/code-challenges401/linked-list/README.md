@@ -54,4 +54,4 @@ To do so I looped over the LL then converting it to normal list then reversed th
 
 I looped over the LL then converting it to normal list by assigning the values to a variable then reversed the list using basic method then called the item using the index value given
 
-![whiteboard](../assets/wb7.png)
+<!-- ![whiteboard](../assets/wb7.png) -->
