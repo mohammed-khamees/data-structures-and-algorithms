@@ -112,7 +112,7 @@ class LinkedList {
 
   //return the node’s value that is k from the end of the linked list
   kthFromEnd(k) {
-    if (k > this.size - 1) return "out of the linkedList range";
+    if (k > this.size - 1 || k < 0) return "out of the linkedList range";
     let current = this.head;
     let count = this.length - 1;
 
