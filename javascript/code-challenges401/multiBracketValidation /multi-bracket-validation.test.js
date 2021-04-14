@@ -14,6 +14,7 @@ describe("stack tests", () => {
   it("should return false", () => {
     expect(multiBracketValidation("[({}]")).toBeFalsy();
     expect(multiBracketValidation("(](")).toBeFalsy();
+    expect(multiBracketValidation("{(})")).toBeFalsy();
   });
 
   it("should return undefined if the typeof input is not a string", () => {
