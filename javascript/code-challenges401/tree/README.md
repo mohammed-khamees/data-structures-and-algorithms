@@ -28,3 +28,23 @@ Create methods that uses recursion big O(2^n):
 created a preOrder,inOrder and postOrder methods first assign empty array then It loops over the tree by going to the root append if preorder goes to the left node if exist and use the uses recursion then append if inorder then go to right if exist and uses recursion then append if postorder, In add it will assign root if it does not exist else will assign cueent as root then check if it is eqaul bigger or smaller than the current and add to it if not exist alse will navigate to the left or right same method applies to contain
 
 <!-- ![whiteboard](../assets/wb7.png) -->
+
+## Maximum Value
+
+Find the Maximum Value in a Binary Tree
+
+## Challenge
+
+Find the Maximum Value in a Binary Tree without using buildins assuming all elements are numbers
+
+## Approach & Efficiency
+
+Created a value called max that is equal to the root then used one of the depth methods to itirate to tree while comparing
+
+Big O of time --> O(2^n) Big O of space --> O(1)
+
+## API
+
+Created a value called max that is equal to the root then used preOrder methods to itirate to tree Nodes values, compare with the value saved in max then replace it if it is bigger then after the recursion ends i will have the max as the really max value in the tree and will return it
+
+![whiteboard](../assets/wb16.png)
