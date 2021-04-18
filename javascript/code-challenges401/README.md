@@ -17,3 +17,4 @@
 | 13               | [multi-bracket-validation](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/multiBracketValidation) |
 | 14               | White                                                                                                                                                         |
 | 15               | [tree](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/tree)                                       |
+| 16               | [tree](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/tree)                                       |

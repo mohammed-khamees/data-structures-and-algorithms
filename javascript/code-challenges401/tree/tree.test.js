@@ -58,4 +58,8 @@ describe("Binary Tree", () => {
 
     expect(contains).toBeTruthy();
   });
+
+  it("findMaximumValue", () => {
+    expect(tree.findMaximumValue()).toEqual(8);
+  });
 });

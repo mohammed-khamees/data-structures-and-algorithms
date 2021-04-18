@@ -85,6 +85,17 @@ class BinaryTree {
     }
     return false;
   }
+
+  findMaximumValue() {
+    const results = [];
+    const traversal = (node) => {
+      if (node.left) traversal(node.left);
+      results.push(node.value);
+      if (node.right) traversal(node.right);
+    };
+    traversal(this.root);
+    return Math.max(...results);
+  }
 }
 
 module.exports = {
