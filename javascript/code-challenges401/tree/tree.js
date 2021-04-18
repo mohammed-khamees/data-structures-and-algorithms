@@ -45,6 +45,12 @@ class BinaryTree {
     traversal(this.root);
     return results;
   }
+}
+
+class BinarySearchTree {
+  constructor(root = null) {
+    this.root = root;
+  }
 
   add(value) {
     var newNode = new Node(value);
@@ -90,4 +96,5 @@ class BinaryTree {
 module.exports = {
   BinaryTree,
   Node,
+  BinarySearchTree,
 };
