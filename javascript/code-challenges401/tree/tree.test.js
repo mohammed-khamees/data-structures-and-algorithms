@@ -1,6 +1,6 @@
 "use strict";
 
-const { Node, BinaryTree } = require("./tree");
+const { Node, BinaryTree, BinarySearchTree } = require("./tree");
 
 describe("Node Module", () => {
   it("create an instance of Node", () => {
@@ -14,6 +14,7 @@ describe("Node Module", () => {
 
 describe("Binary Tree", () => {
   let tree;
+  let searchTree;
   beforeAll(() => {
     const one = new Node(1);
     const two = new Node(2);
@@ -31,6 +32,7 @@ describe("Binary Tree", () => {
     three.left = six;
     three.right = seven;
     tree = new BinaryTree(one);
+    searchTree = new BinarySearchTree(one);
   });
 
   it("preOrder", () => {
@@ -50,11 +52,11 @@ describe("Binary Tree", () => {
   });
   it("add", () => {
     const expected = [4, 8, 5, 2, 6, 7, 3, 1];
-    tree.add(5);
+    searchTree.add(5);
     expect(expected.length).toEqual(8);
   });
   it("contains", () => {
-    const contains = tree.contains(5);
+    const contains = searchTree.contains(5);
 
     expect(contains).toBeTruthy();
   });
