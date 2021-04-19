@@ -38,21 +38,25 @@ describe("Binary Tree", () => {
     const preOrder = tree.preOrder();
     expect(preOrder).toEqual(expected);
   });
+
   it("inOrder", () => {
     const expected = [4, 2, 8, 5, 1, 6, 3, 7];
     const inOrder = tree.inOrder();
     expect(inOrder).toEqual(expected);
   });
+
   it("postOrder", () => {
     const expected = [4, 8, 5, 2, 6, 7, 3, 1];
     const postOrder = tree.postOrder();
     expect(postOrder).toEqual(expected);
   });
+
   it("add", () => {
     const expected = [4, 8, 5, 2, 6, 7, 3, 1];
     tree.add(5);
     expect(expected.length).toEqual(8);
   });
+
   it("contains", () => {
     const contains = tree.contains(5);
 
@@ -61,5 +65,10 @@ describe("Binary Tree", () => {
 
   it("findMaximumValue", () => {
     expect(tree.findMaximumValue()).toEqual(8);
+  });
+
+  it("breadthFirst", () => {
+    const expected = [1, 2, 4, 5, 3, 6, 7, 8];
+    expect(tree.breadthFirst(tree)).toEqual(expected);
   });
 });

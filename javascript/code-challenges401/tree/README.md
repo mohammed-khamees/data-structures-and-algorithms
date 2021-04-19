@@ -29,6 +29,8 @@ created a preOrder,inOrder and postOrder methods first assign empty array then I
 
 <!-- ![whiteboard](../assets/wb7.png) -->
 
+#####################################################################################
+
 ## Maximum Value
 
 Find the Maximum Value in a Binary Tree
@@ -48,3 +50,21 @@ Big O of time --> O(2^n) Big O of space --> O(1)
 Created a value called max that is equal to the root then used preOrder methods to itirate to tree Nodes values, compare with the value saved in max then replace it if it is bigger then after the recursion ends i will have the max as the really max value in the tree and will return it
 
 ![whiteboard](../assets/wb16.png)
+
+#####################################################################################
+
+## Breadth First
+
+Breadth-first Traversal throught the tree
+
+## Challenge
+
+Write a breadth first traversal method Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+## Approach & Efficiency
+
+assign empty array then It loops over the tree by going to the root
+
+## API
+
+![whiteboard](../assets/wb17.png)
