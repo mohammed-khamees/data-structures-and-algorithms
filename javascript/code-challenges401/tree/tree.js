@@ -102,6 +102,32 @@ class BinarySearchTree {
     traversal(this.root);
     return Math.max(...results);
   }
+
+  breadthFirst(tree) {
+    tree = tree.root;
+
+    const results = [];
+    let flag = true;
+
+    const traversal = (tree = tree) => {
+      results.push(tree.value);
+
+      console.log(results);
+
+      if (flag) {
+        flag = false;
+        let tree1 = tree.left;
+        traversal(tree1);
+      } else {
+        flag = true;
+        let tree2 = tree.right;
+        traversal(tree2);
+      }
+    };
+    traversal(tree);
+
+    return results;
+  }
 }
 
 module.exports = {
