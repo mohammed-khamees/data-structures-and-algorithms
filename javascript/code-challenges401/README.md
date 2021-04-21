@@ -19,3 +19,4 @@
 | 15               | [tree](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/tree)                                       |
 | 16               | [findMaximumValue](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/tree)                           |
 | 17               | [breadth-first](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/tree)                              |
+| 18               | [fizzBuzz Tree](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/fizzBuzzTree)                      |
