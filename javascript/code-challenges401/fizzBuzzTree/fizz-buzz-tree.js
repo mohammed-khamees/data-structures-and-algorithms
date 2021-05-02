@@ -1,50 +1,49 @@
 "use strict";
 
-const fizzBuzzTree = (tree) => {
+const { Queue } = require("./../stacksAndQueues/stacks-and-queues");
+
+class Node {
+  constructor(value, num) {
+    this.value = value;
+    this.children = [num];
+  }
+}
+
+class KaryTree {
+  constructor(num) {
+    this.root = null;
+    this.num = num;
+  }
+}
+
+function fizzBuzzTree(tree) {
+  let newTree = new KaryTree(tree.num);
+
+  newTree.root = tree.root;
+
+  let queue = new Queue();
+
+  if (newTree.root) queue.enqueue(newTree.root);
+  else return;
+
   const traversal = (node) => {
-    if (node) {
-      if (node) {
-        if (node.value % 3 === 0 && node.value % 5 === 0) {
-          node.value = "FizzBuzz";
-        } else if (node.value % 3 === 0) {
-          node.value = "Fizz";
-        } else if (node.value % 5 === 0) {
-          node.value = "Buzz";
-        } else {
-          node.value = `${node.value}`;
-        }
-        traversal(node.left);
-      }
-      if (node.left) {
-        if (node.left.value % 3 === 0 && node.left.value % 5 === 0) {
-          node.left.value = "FizzBuzz";
-        } else if (node.left.value % 3 === 0) {
-          node.left.value = "Fizz";
-        } else if (node.left.value % 5 === 0) {
-          node.left.value = "Buzz";
-        } else {
-          node.left.value = `${node.left.value}`;
-        }
-        traversal(node.left);
-      }
-      if (node.right) {
-        if (node.right.value % 3 === 0 && node.right.value % 5 === 0) {
-          node.right.value = "FizzBuzz";
-        } else if (node.right.value % 3 === 0) {
-          node.right.value = "Fizz";
-        } else if (node.right.value % 5 === 0) {
-          node.right.value = "Buzz";
-        } else {
-          node.right.value = `${node.right.value}`;
-        }
-        traversal(node.right);
+    if (node.value % 5 === 0 && node.value % 3 === 0) node.value = "FizzBuzz";
+    else if (node.value % 3 === 0) node.value = "Fizz";
+    else if (node.value % 5 === 0) node.value = "Buzz";
+    else node.value = node.value.toString();
+
+    for (let i = 0; i < node.children.length; i++) {
+      if (node.children[i]) {
+        queue.enqueue(node.children[i]);
       }
     }
+
+    if (!queue.isEmpty()) traversal(queue.dequeue());
   };
 
-  traversal(tree.root);
+  traversal(queue.dequeue());
 
-  return tree;
-};
+  return newTree;
+}
 
 module.exports = fizzBuzzTree;

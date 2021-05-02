@@ -35,10 +35,8 @@ describe("Binary Tree", () => {
   });
 
   it("fizzBuzzTree", () => {
-    console.log(tree.inOrder());
     let newTree = fizzBuzzTree(tree).inOrder();
     const expected = ["4", "2", "8", "Buzz", "1", "Fizz", "Fizz", "7"];
-
     expect(newTree).toEqual(expected);
   });
 });
