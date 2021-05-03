@@ -21,3 +21,4 @@
 | 17               | [breadth-first](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/tree)                              |
 | 18               | [fizzBuzz Tree](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/fizzBuzzTree)                      |
 | 26               | [insertion-sort](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/insertionSort)                    |
+| 27               | [merge-sort](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/mergeSort)                            |
