@@ -23,3 +23,4 @@
 | 26               | [insertion-sort](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/insertionSort)                    |
 | 27               | [merge-sort](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/mergeSort)                            |
 | 28               | [quick-sort](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/QuickSort)                            |
+| 30               | [hashtable](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/hashtable)                             |
