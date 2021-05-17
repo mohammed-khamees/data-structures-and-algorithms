@@ -65,12 +65,12 @@ describe("Binary Tree", () => {
     expect(contains).toBeTruthy();
   });
 
-  it("findMaximumValue", () => {
-    expect(tree.findMaximumValue()).toEqual(8);
-  });
+  // it("findMaximumValue", () => {
+  //   expect(tree.findMaximumValue()).toEqual(8);
+  // });
 
-  it("breadthFirst", () => {
-    const expected = [1, 2, 3, 4, 5, 6, 7, 8];
-    expect(tree.breadthFirst(tree)).toEqual(expected);
-  });
+  // it("breadthFirst", () => {
+  //   const expected = [1, 2, 3, 4, 5, 6, 7, 8];
+  //   expect(tree.breadthFirst(tree)).toEqual(expected);
+  // });
 });
