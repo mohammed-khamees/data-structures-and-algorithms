@@ -25,3 +25,4 @@
 | 28               | [quick-sort](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/QuickSort)                            |
 | 30               | [hashtable](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/hashtable)                             |
 | 31               | [repeatedWord](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/repeatedWord)                       |
+| 32               | [treeIntersection](https://github.com/mohammed-khamees/data-structures-and-algorithms/blob/main/javascript/code-challenges401/treeIntersection)               |
